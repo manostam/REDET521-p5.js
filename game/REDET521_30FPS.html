@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title> REDET-521 30FPS </title>
+
+    <link rel="stylesheet" type="text/css" href="gameStyle.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+    
+
+  </head>
+
+  <body>
+    <!-- The equipment available -->
+    <footer>
+      <div>
+        <p id="oxygenBackpack">
+          Oxygen Backpack <br> 
+          - can be tuned with 10 gears, click to build <br> 
+          - gears can be re-used
+        </p>
+      </div>
+    </footer>
+   
+    <!-- This is where the variable will be displayed --> 
+    <aside>
+      <div id="firstBox"> 
+        <p> Oxygen levels </p>
+        <span id="oxygenDisplay"></span> <span>/</span> <span id="oxygenMax"></span>
+      </div>
+      
+      <div id="secondBox">
+        <p> Gears picked </p>
+        <span id="gearsDisplay"> </span>
+      </div>
+     
+      <script>
+        let theOxygenMax = document.getElementById("oxygenMax");
+        theOxygenMax.innerHTML = 30;
+        let btnSumbit = document.getElementById("oxygenBackpack");
+
+        let theGears = document.getElementById("gearsDisplay");
+
+
+        btnSumbit.addEventListener('click', function() {
+          console.log("Hello, button clicked!")
+          console.log(theGears.textContent);  // text content to get the text content of the element
+          if (theGears.textContent > 9) {
+            theOxygenMax.innerHTML = 100;
+            // theGears.textContent -= 1;     // #TODO, interference from the main js, does not let me update it
+          }
+          
+        } )
+       </script>
+
+    </aside>
+
+    <!-- The main interface of the game -->
+    <main>
+    
+      <script src="alpha1at30FPS.js"> </script>
+
+    </main>
+
+    
+
+    
+     
+  </body>
+  
+  
+
+</html>

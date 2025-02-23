@@ -1,0 +1,58 @@
+html{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: dotted 1px red;
+}
+
+canvas {
+  display: block;
+}
+
+main {
+  border: ridge 1px black;
+  height: 95vh;
+}
+
+/*--------------------------- stats ---------------------------*/
+aside {
+  top: 1vh;
+  right: 1vw;
+  background-color:rgba(185, 115, 57, 0.87);
+  border: ridge 1px rgba(60, 65, 33, 0.897);
+  position: absolute;
+}
+
+.firstBox {
+  top: 1vh;
+  right: 1vw;
+  
+  
+  position: absolute;
+}
+
+.secondBox {
+  top: 3vh;
+  right: 1vw;
+  position: absolute;
+}
+
+/*--------------------------- equipment ---------------------------*/
+footer {
+  background-color:rgba(201, 118, 50, 0.87);
+  border: ridge 1px rgba(60, 65, 33, 0.897);
+  bottom: 1vh;
+  width: 10vw;
+  
+  position: absolute;
+}
+
+#oxygenBackpack {
+  background-color:rgba(185, 115, 57, 0.87);
+  border: ridge 1px rgba(60, 65, 33, 0.897);
+  
+}

@@ -1,0 +1,50 @@
+body{
+    background-color:rgb(170,116,72);
+    border: 3vw;
+}
+
+main{
+    width: 80vw;
+    height: 80vh;
+    border: 1cm black;
+    color: bisque;
+}
+
+main>p{
+    font-size: large;
+}
+main>a{
+    font-size: large;
+}
+
+#title {
+    position: absolute;
+    left: 43vw;
+    top: 20vh;
+    font-size: xx-large;
+    
+}
+
+#launcher {
+    position: absolute;
+    left: 42vw;
+    top: 35vh;
+    font-size: x-large;
+    background-color: rgb(232, 113, 23);
+    
+}
+#launcher a {
+    color: bisque;
+}
+
+footer {
+    width: 10vw;
+    height: 10vh;
+}
+
+footer>span {
+    position: absolute;
+    bottom: 2vw;
+    right: 2vw;
+    color: bisque;
+}
